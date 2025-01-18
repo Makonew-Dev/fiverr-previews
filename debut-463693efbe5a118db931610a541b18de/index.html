@@ -11,19 +11,32 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="">
-        <section class="pt-48 stSection bg-dark text-cWhite">
+
+        <nav class="nav">
+            <h1>DEBUT</h1>
+            <div class="normal_menu">
+                <a href="/">Home</a>
+                <a href="/practices.html">Practices</a>
+                <a href="/about.html">About</a>
+            </div>
+            <div class="hamburger_menu">
+                <img src="./img/hamburger_menu.svg" alt="H"/>
+            </div>
+        </nav>
+
+        <section class="pt-24 stSection bg-dark text-cWhite">
             <div class="flex flex-col items-center justify-center text-center lg:max-w-[816px] w-full relative">
                 <h1>MASTER YOUR CHESS SKILLS WITH EXPERT PRACTICE</h1>
                 <p class="py-8 font-normal big">Refine your skills, sharpen your strategy, and conquer the board with structured chess practices. Perfect for players of all levels—challenge yourself and achieve mastery one move at a time!</p>
                 <button class="self-center btn bg-cWhite text-dark">Practices</button>
             </div>
             <div class="relative -mt-24">
-                <img class="translate-y-[43%]" src="img/hero_board.svg" alt="Chessboard"/>
+                <img class="translate-y-[43.5%]" src="img/hero_board.svg" alt="Chessboard"/>
             </div>
         </section>
         <section class="pt-32 sm:pt-64 stSection text-dark min-h-96 bg-light selection-none">
             <h2 class="pb-8 sm:pb-8">OPENINGS FOR WHITE</h2>
-            <div class="flex scroller max-w-full overflow-x-auto space-x-8  pb-12">
+            <div class="flex scroller max-w-full overflow-x-auto pb-12">
 
                 <div class="openingCard">
                   <h4 class="pb-[40px]">English game</h4>
@@ -51,7 +64,7 @@
         </section>
         <section class="min-h-96 stSection bg-dark text-cWhite">
             <h2 class="py-16 sm:py-16">OPENINGS FOR WHITE</h2>
-            <div class="flex scroller max-w-full overflow-x-auto space-x-8 text-dark pb-12">
+            <div class="flex scroller max-w-full overflow-x-auto  text-dark pb-12">
 
                 <div class="openingCard">
                   <h4 class="pb-[40px]">Caro-Kann defence</h4>
@@ -78,11 +91,11 @@
               
         </section>
         
-        <section class="stSection text-dark min-h-96 bg-light">
-            <div class="grid w-full  grid-cols-1 sm:grid-cols-2 ">
-                <div class="flex flex-col justify-center items-start pt-24 sm:pt-0">
+        <section class="stSection text-dark  bg-light">
+            <div class="grid w-full  grid-cols-1 md:grid-cols-2 ">
+                <div class="flex flex-col justify-center items-start pt-24 md:pt-0 pl-8 lg:pl-0">
                     <h2>ABOUT US</h2>
-                    <p class="py-12">
+                    <p class="py-12 relative z-10">
                         At Debut, we’re passionate about chess and committed to helping players refine their skills and elevate their game. Whether you're a beginner or an experienced player, our platform provides engaging and effective chess practices tailored to your needs.
                         <br/><br/>
                         We believe every move matters, and with the right practice, anyone can achieve mastery. 
@@ -92,33 +105,24 @@
                         Learn more
                     </button>
                 </div>
-                <div>
-                    <img src="./img/knightWithShadow.png" class="h-full object-cover"/>
+                <div class="h-full min-h-[80vh]  xl:w-[110%] lg:w-full md:w-[80%] ml-auto xl:overflow-x-hidden">
+                    <img src="./img/knightWithShadow.png" class="h-full relative z-0 xl:overflow-x-hidden overflow-visible w-[120%] sm:translate-x-0 sm:translate-y-0 object-cover"/>
                 </div>
             </div>
         </section>
 
         <footer>
-            <h1>DEBUT</h1>
-            <nav class="nav">
-                <a>Home</a>
-                <a>Practices</a>
-                <a>About</a>
+            <div class="flex flex-col w-[111px] text-nowrap">
+                <h1 class="text-nowrap">DEBUT</h1>
+                <span class="small sm:hidden">Copyright &copy; Debut</span>
+            </div>
+            <nav class="fnav">
+                <a href="/">Home</a>
+                <a href="/practices.html">Practices</a>
+                <a href="/about.html">About</a>
             </nav>
-            <span class="small">Copyright &copy; Debut</span>
+            <span class="small hidden sm:block w-[111px] text-nowrap">Copyright &copy; Debut</span>
         </footer>
 
-        <script type="text/javascript">
-            document.addEventListener('contextmenu', (ev)=>{
-                ev.preventDefault();
-            })
-            document.addEventListener("keydown",
-            (e) => {
-                if ((e.metaKey || e.ctrlKey) && e.code === "KeyS") {
-                e.preventDefault();
-                }
-            })
-
-        </script>
     </body>
 </html>
