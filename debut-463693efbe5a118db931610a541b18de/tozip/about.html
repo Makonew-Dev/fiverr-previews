@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Debut</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="p-0 m-0">
+        <nav class="nav">
+            <h1>DEBUT</h1>
+            <div class="standard_menu ">
+                <a href="./">Home</a>
+                <a href="./practices.html">Practices</a>
+                <a href="./about.html">About</a>
+            </div>
+            <div class="hamburger_menu">
+                <img src="./img/hamburger_menu.svg" alt="H"/>
+            </div>
+            <div class="close_menu">
+                <img src="./img/close_menu.svg" alt="H"/>
+            </div>
+        </nav>
+        <section class="stSection text-light  bg-dark">
+            <div class="grid w-full  grid-cols-1 md:grid-cols-2 ">
+                <div class="flex flex-col justify-center items-start pt-24 md:pt-0 pl-8 lg:pl-0">
+                    <h2>ABOUT US</h2>
+                    <p class="py-12 relative z-10">
+                        At Debut, we’re passionate about chess and committed to helping players refine their skills and elevate their game. Whether you're a beginner or an experienced player, our platform provides engaging and effective chess practices tailored to your needs.
+                        <br/><br/>
+                        We believe every move matters, and with the right practice, anyone can achieve mastery. 
+                    </p>
+
+                </div>
+                <div class="h-full sm:min-h-[80vh]  xl:w-[110%] lg:w-full md:w-[80%] ml-auto xl:overflow-x-hidden sm:imageholder">
+                    <img src="./img/pawnWithShadow.png" class="h-full relative z-0 xl:overflow-x-hidden overflow-visible w-[120%] sm:translate-x-0 sm:translate-y-0 object-cover"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="stSection text-dark  bg-light">
+            <div class="grid w-full  grid-cols-1 md:grid-cols-2 reverse">
+                <div class="flex flex-col justify-center items-start pt-24 md:pt-0 pl-8 lg:pl-0">
+                    <h2>OUR MISSION</h2>
+                    <p class="py-12 relative z-10">
+                        At Debut, our mission is to empower chess players to continuously improve, discover new strategies, and find joy in the game. We believe that chess is more than just a pastime—it’s a journey of growth, critical thinking, and creativity. That’s why we’ve created a platform dedicated to providing structured and effective practice tools that make learning chess both engaging and rewarding.
+                        <br/><br/>
+                        Whether you’re a beginner taking your first steps or an experienced player striving to reach the next level, Debut offers resources designed to meet you where you are. From sharpening tactics to mastering complex strategies, every tool is thoughtfully crafted to help you build confidence and excel at your own pace.
+                    </p>
+
+                </div>
+                <div class="h-full sm:min-h-[80vh]  xl:w-[110%] lg:w-full md:w-[80%] ml-auto xl:overflow-x-hidden sm:imageholder">
+                    <img src="./img/rookWithShadow.png" class="h-full relative z-0 xl:overflow-x-hidden overflow-visible w-[120%] sm:translate-x-0 sm:translate-y-0 object-cover"/>
+                </div>
+            </div>
+        </section>
+        <section class="stSection text-light  bg-dark">
+            <div class="grid w-full  grid-cols-1 md:grid-cols-2 ">
+                <div class="flex flex-col justify-center items-start pt-24 md:pt-0 pl-8 lg:pl-0">
+                    <h2>WHY CHOOSE DEBUT?</h2>
+                    <p class="py-12 relative z-10">
+                        We understand that progress in chess requires consistent, meaningful practice. It’s not just about playing; it’s about purposeful learning and growth. That’s why Debut focuses on creating a seamless, personalized experience that adapts to your skill level and unique goals. Whether you’re looking to improve your opening strategies, sharpen your tactics, or master endgame techniques, our platform offers the tools you need to succeed.
+                        <br/><br/>
+                        From interactive exercises and dynamic puzzles to advanced challenges and real-time analysis, every aspect of Debut is carefully crafted with the chess enthusiast in mind. We strive to make learning engaging, enjoyable, and effective, so you can see tangible progress with every move you make.
+                    </p>
+
+                </div>
+                <div class="h-full sm:min-h-[80vh]  xl:w-[110%] lg:w-full md:w-[80%] ml-auto xl:overflow-x-hidden sm:imageholder">
+                    <img src="./img/bishopWithShadow.png" class="h-full relative z-0 xl:overflow-x-hidden overflow-visible w-[120%] sm:translate-x-0 sm:translate-y-0 object-cover"/>
+                </div>
+            </div>
+        </section>
+        <section class="stSection bg-light pb-[10vh]"> 
+            <div class="lg:max-w-[60vw]   w-full bg-dark text-cWhite contactformcontainer md:py-[74px] py-[40px] md:px-[75px] px-[30px]  mt-[8vh]">
+                <h1 class="text-center">CONTACT</h1>
+                <form class="gap-[12px] flex flex-col">
+                    <div class="flex gap-[12px] sm:flex-row flex-col">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <textarea placeholder="Message" class="min-h-[120px] max-h-[300px] sm:h-[30vh]"></textarea>
+                    <button class="bg-white text-dark w-fit mx-auto btn">Send</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="flex flex-col w-[111px] text-nowrap">
+                <h1 class="text-nowrap">DEBUT</h1>
+                <span class="small sm:hidden">Copyright &copy; Debut</span>
+            </div>
+            <nav class="fnav">
+                <a href="./">Home</a>
+                <a href="./practices.html">Practices</a>
+                <a href="./about.html">About</a>
+            </nav>
+            <span class="small hidden sm:block w-[111px] text-nowrap">Copyright &copy; Debut</span>
+        </footer>
+    </body>
+</html>
