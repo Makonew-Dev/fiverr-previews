@@ -14,13 +14,16 @@
 
         <nav class="nav">
             <h1>DEBUT</h1>
-            <div class="normal_menu">
+            <div class="standard_menu ">
                 <a href="./">Home</a>
                 <a href="./practices.html">Practices</a>
                 <a href="./about.html">About</a>
             </div>
             <div class="hamburger_menu">
                 <img src="./img/hamburger_menu.svg" alt="H"/>
+            </div>
+            <div class="close_menu">
+                <img src="./img/close_menu.svg" alt="H"/>
             </div>
         </nav>
 
@@ -30,7 +33,7 @@
                 <p class="py-8 font-normal big">Refine your skills, sharpen your strategy, and conquer the board with structured chess practices. Perfect for players of all levels—challenge yourself and achieve mastery one move at a time!</p>
                 <button class="self-center btn bg-cWhite text-dark">Practices</button>
             </div>
-            <div class="relative -mt-24">
+            <div class="relative -mt-24 pointer-events-none">
                 <img class="translate-y-[43.5%]" src="img/hero_board.svg" alt="Chessboard"/>
             </div>
         </section>
@@ -39,52 +42,591 @@
             <div class="flex scroller max-w-full overflow-x-auto pb-12">
 
                 <div class="openingCard">
-                  <h4 class="pb-[40px]">English game</h4>
-                  <img src="./img/chessboards/white/englishopening.svg" alt="">
+                  <h4 class="pb-[40px]">English opening</h4>
+                  <div class="block !aspect-square">
+                    <div class="chessboard h-full w-full bg-slate-200 englishopening">
+                    <div class="row">
+                        <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                        <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                        <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                        <div><img src="./img/chesspieces/black_queen.svg" alt="Black Queen"></div>
+                        <div><img src="./img/chesspieces/black_king.svg" alt="Black King"></div>
+                        <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                        <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                        <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                    </div>
+                    <div class="row">
+                        <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                        <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                        <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                        <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                        <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                        <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                        <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                        <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                    </div>
+                    <div class="row">
+                        <div></div><div></div><div></div><div></div>
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="row">
+                        <div></div><div></div><div></div><div></div>
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="row">
+                        <div></div><div></div><div class="moved"><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div><div></div>
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="row">
+                        <div></div><div></div><div></div><div></div>
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                    <div class="row">
+                        <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                        <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                        <div class="moved"></div>
+                        <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                        <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                        <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                        <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                        <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                    </div>
+                    <div class="row">
+                        <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                        <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                        <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                        <div><img src="./img/chesspieces/white_queen.svg" alt="White Queen"></div>
+                        <div><img src="./img/chesspieces/white_king.svg" alt="White King"></div>
+                        <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                        <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                        <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                    </div>
+                    </div>
+                    </div>
+
                 </div>
                 <div class="openingCard">
                     <h4 class="pb-[40px]">Italian game</h4>
-                    <img src="./img/chessboards/white/englishopening.svg" alt="">
+                    
+                    <div class="block !aspect-square">
+                        <div class="chessboard w-full h-full bg-slate-200 italiangame">
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_queen.svg" alt="Black Queen"></div>
+                                <div><img src="./img/chesspieces/black_king.svg" alt="Black King"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div class="moved"><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div><div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_queen.svg" alt="White Queen"></div>
+                                <div><img src="./img/chesspieces/white_king.svg" alt="White King"></div>
+                                <div class="moved"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                            </div>
+                        </div>
+                    </div>
                   </div>
                   <div class="openingCard">
                     <h4 class="pb-[40px]">Queen's gambit</h4>
-                    <img src="./img/chessboards/white/englishopening.svg" alt="">
+                    <div class="block !aspect-square">  
+                        <div class="chessboard  h-full w-full bg-slate-200 queensgambit">
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_queen.svg" alt="Black Queen"></div>
+                                <div><img src="./img/chesspieces/black_king.svg" alt="Black King"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div class="moved"><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div class="moved"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_queen.svg" alt="White Queen"></div>
+                                <div><img src="./img/chesspieces/white_king.svg" alt="White King"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                            </div>
+                        </div>
+                    </div>
                   </div>
                   <div class="openingCard">
-                    <h4 class="pb-[40px]">English game</h4>
-                    <img src="./img/chessboards/white/englishopening.svg" alt="">
-                  </div>
-                  <div class="openingCard">
-                    <h4 class="pb-[40px]">English game</h4>
-                    <img src="./img/chessboards/white/englishopening.svg" alt="">
-                  </div>
+                    <h4 class="pb-[40px]">Scotch game</h4>
+                    <div class="block !aspect-square">  
+                    <div class="chessboard w-full h-full bg-slate-200 scotchgame">
+                        <div class="row">
+                            <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                            <div></div>
+                            <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                            <div><img src="./img/chesspieces/black_queen.svg" alt="Black Queen"></div>
+                            <div><img src="./img/chesspieces/black_king.svg" alt="Black King"></div>
+                            <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                            <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                            <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                        </div>
+                        <div class="row">
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                        </div>
+                        <div class="row">
+                            <div></div><div></div><div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div><div></div>
+                            <div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="row">
+                            <div></div><div></div><div></div><div></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="row">
+                            <div></div><div></div><div></div><div class="moved"><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="row">
+                            <div></div><div></div><div></div><div></div>
+                            <div></div><div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div><div></div><div></div>
+                        </div>
+                        <div class="row">
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div class="moved"></div>
+                            <div></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                        </div>
+                        <div class="row">
+                            <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                            <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                            <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                            <div><img src="./img/chesspieces/white_queen.svg" alt="White Queen"></div>
+                            <div><img src="./img/chesspieces/white_king.svg" alt="White King"></div>
+                            <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                            <div></div>
+                            <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                        </div>
+                    </div> </div>                  
+                </div>
                 
               </div>
               
         </section>
         <section class="min-h-96 stSection bg-dark text-cWhite">
-            <h2 class="py-16 sm:py-16">OPENINGS FOR WHITE</h2>
+            <h2 class="py-16 sm:py-16">OPENINGS FOR BLACK</h2>
             <div class="flex scroller max-w-full overflow-x-auto  text-dark pb-12">
 
                 <div class="openingCard">
                   <h4 class="pb-[40px]">Caro-Kann defence</h4>
-                  <img src="./img/chessboards/white/englishopening.svg" alt="">
+                  <div class="block !aspect-square">
+                    <div class="chessboard bg-slate-200 carokanndefence">
+                        <div class="row">
+                            <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                            <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                            <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                            <div><img src="./img/chesspieces/black_queen.svg" alt="Black Queen"></div>
+                            <div><img src="./img/chesspieces/black_king.svg" alt="Black King"></div>
+                            <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                            <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                            <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                        </div>
+                        <div class="row">
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div class="moved"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                        </div>
+                        <div class="row">
+                            <div></div><div></div><div class="moved"><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div><div></div>
+                            <div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="row">
+                            <div></div><div></div><div></div><div></div>
+                            <div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="row">
+                            <div></div><div></div><div class=""></div><div></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="row">
+                            <div></div><div></div><div></div><div></div>
+                            <div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="row">
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                        </div>
+                        <div class="row">
+                            <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                            <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                            <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                            <div><img src="./img/chesspieces/white_queen.svg" alt="White Queen"></div>
+                            <div><img src="./img/chesspieces/white_king.svg" alt="White King"></div>
+                            <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                            <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                            <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                        </div>
+                    </div>
+
+                  </div>  
+
                 </div>
                 <div class="openingCard">
                     <h4 class="pb-[40px]">Dutch defence</h4>
-                    <img src="./img/chessboards/white/englishopening.svg" alt="">
+                    <div class="block !aspect-square">
+                        <div class="chessboard bg-slate-200 dutchdefence">
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_queen.svg" alt="Black Queen"></div>
+                                <div><img src="./img/chesspieces/black_king.svg" alt="Black King"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div class="moved"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            </div>
+                    
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div class=""></div><div></div>
+                                <div></div><div class="moved"><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div class=""></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div><div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_queen.svg" alt="White Queen"></div>
+                                <div><img src="./img/chesspieces/white_king.svg" alt="White King"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                            </div>
+                        </div>
+                    
+                    </div>  
+
                   </div>
                   <div class="openingCard">
                     <h4 class="pb-[40px]">French defence</h4>
-                    <img src="./img/chessboards/white/englishopening.svg" alt="">
+                    <div class="block !aspect-square">
+                        <div class="chessboard bg-slate-200 frenchdefence">
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_queen.svg" alt="Black Queen"></div>
+                                <div><img src="./img/chesspieces/black_king.svg" alt="Black King"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div class="moved"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div class=""></div><div></div>
+                                <div class="moved"><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div class=""></div><div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_queen.svg" alt="White Queen"></div>
+                                <div><img src="./img/chesspieces/white_king.svg" alt="White King"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                            </div>
+                        </div>
+                    </div>  
+
                   </div>
                   <div class="openingCard">
-                    <h4 class="pb-[40px]">English game</h4>
-                    <img src="./img/chessboards/white/englishopening.svg" alt="">
+                    <h4 class="pb-[40px]">Scandinavian defence</h4>
+                    <div class="block !aspect-square">
+                        <div class="chessboard bg-slate-200 scandinaviandefense">
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_queen.svg" alt="Black Queen"></div>
+                                <div><img src="./img/chesspieces/black_king.svg" alt="Black King"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div class="moved"></div>
+                    
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            </div>
+                    
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div class="moved"><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div class=""></div><div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_queen.svg" alt="White Queen"></div>
+                                <div><img src="./img/chesspieces/white_king.svg" alt="White King"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                            </div>
+                        </div>
+                    </div>  
+
                   </div>
                   <div class="openingCard">
-                    <h4 class="pb-[40px]">English game</h4>
-                    <img src="./img/chessboards/white/englishopening.svg" alt="">
+                    <h4 class="pb-[40px]">Sicilian defence</h4>
+                    <div class="block !aspect-square">
+                        <div class="chessboard bg-slate-200 sicilian defense">
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_queen.svg" alt="Black Queen"></div>
+                                <div><img src="./img/chesspieces/black_king.svg" alt="Black King"></div>
+                                <div><img src="./img/chesspieces/black_bishop.svg" alt="Black Bishop"></div>
+                                <div><img src="./img/chesspieces/black_knight.svg" alt="Black Knight"></div>
+                                <div><img src="./img/chesspieces/black_rook.svg" alt="Black Rook"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div class="moved"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                                <div><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div>
+                            </div>
+                    
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div class="moved"><img src="./img/chesspieces/black_pawn.svg" alt="Black Pawn"></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div class=""></div><div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                                <div><img src="./img/chesspieces/white_pawn.svg" alt="White Pawn"></div>
+                            </div>
+                            <div class="row">
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_queen.svg" alt="White Queen"></div>
+                                <div><img src="./img/chesspieces/white_king.svg" alt="White King"></div>
+                                <div><img src="./img/chesspieces/white_bishop.svg" alt="White Bishop"></div>
+                                <div><img src="./img/chesspieces/white_knight.svg" alt="White Knight"></div>
+                                <div><img src="./img/chesspieces/white_rook.svg" alt="White Rook"></div>
+                            </div>
+                        </div>
+                    </div>  
                   </div>
                 
               </div>
@@ -107,7 +649,7 @@
                         </button>
                     </a>
                 </div>
-                <div class="h-full min-h-[80vh]  xl:w-[110%] lg:w-full md:w-[80%] ml-auto xl:overflow-x-hidden">
+                <div class="h-full md:min-h-[80vh] min-h-[50vh]  xl:w-[110%] lg:w-full md:w-[80%] ml-auto xl:overflow-x-hidden">
                     <img src="./img/knightWithShadow.png" class="h-full relative z-0 xl:overflow-x-hidden overflow-visible w-[120%] sm:translate-x-0 sm:translate-y-0 object-cover"/>
                 </div>
             </div>

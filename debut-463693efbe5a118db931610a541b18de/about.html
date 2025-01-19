@@ -13,13 +13,16 @@
     <body class="p-0 m-0">
         <nav class="nav">
             <h1>DEBUT</h1>
-            <div class="normal_menu">
+            <div class="standard_menu ">
                 <a href="./">Home</a>
                 <a href="./practices.html">Practices</a>
                 <a href="./about.html">About</a>
             </div>
             <div class="hamburger_menu">
                 <img src="./img/hamburger_menu.svg" alt="H"/>
+            </div>
+            <div class="close_menu">
+                <img src="./img/close_menu.svg" alt="H"/>
             </div>
         </nav>
         <section class="stSection text-light  bg-dark">
@@ -69,6 +72,19 @@
                 <div class="h-full sm:min-h-[80vh]  xl:w-[110%] lg:w-full md:w-[80%] ml-auto xl:overflow-x-hidden sm:imageholder">
                     <img src="./img/bishopWithShadow.png" class="h-full relative z-0 xl:overflow-x-hidden overflow-visible w-[120%] sm:translate-x-0 sm:translate-y-0 object-cover"/>
                 </div>
+            </div>
+        </section>
+        <section class="stSection bg-light pb-[10vh]"> 
+            <div class="lg:max-w-[60vw]   w-full bg-dark text-cWhite contactformcontainer md:py-[74px] py-[40px] md:px-[75px] px-[30px]  mt-[8vh]">
+                <h1 class="text-center">CONTACT</h1>
+                <form class="gap-[12px] flex flex-col">
+                    <div class="flex gap-[12px] sm:flex-row flex-col">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <textarea placeholder="Message" class="min-h-[120px] max-h-[300px] sm:h-[30vh]"></textarea>
+                    <button class="bg-white text-dark w-fit mx-auto btn">Send</button>
+                </form>
             </div>
         </section>
         <footer>
